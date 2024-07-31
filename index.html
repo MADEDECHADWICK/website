@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadwick Madede Personal Webpage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Know about Chadwick Madede</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Chadwick Madede. I am an IT auditor, data scientist, and Python programmer. I have a passion for technology and solving complex problems through data analysis and programming.</p>
+        <button id="moreInfoBtn" class="btn btn-primary">Show More</button>
+        <p id="moreInfo" class="hidden">I have worked on various projects involving machine learning, data visualization, and automation. I'm always eager to learn new technologies and improve my skills.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> Description of your first project.</li>
+            <li><strong>Project 2:</strong> Description of your second project.</li>
+            <li><strong>Project 3:</strong> Description of your third project.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:chadwickmadede@gmail.com">chadwickmadede@gmail.com</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/chadwick-madede-a575a8298" target="_blank">LinkedIn Profile</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Chadwick Madede</p>
+    </footer>
+
+    <script>
+        document.getElementById('moreInfoBtn').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.classList.contains('hidden')) {
+                moreInfo.classList.remove('hidden');
+                this.textContent = 'Show Less';
+            } else {
+                moreInfo.classList.add('hidden');
+                this.textContent = 'Show More';
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
